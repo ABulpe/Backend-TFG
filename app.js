@@ -25,6 +25,6 @@ app.use("/api/bussines", bussinesRouter);
 app.use("/api/news", newsRouter);
 app.use("/api/associations", associationsRouter);
 
-app.use(notFound)
+
 
 module.exports = app;
