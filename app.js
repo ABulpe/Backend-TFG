@@ -17,8 +17,7 @@ app.use(cors())
 app.use(express.json())
 
 
-//app.use('/public', express.static(`${__dirname}/storage/images`)) Esta versión es la buena pero para el despliegue usamos esta de abajo.
-app.use('/public', express.static('https://backend-tfg-production.up.railway.app/storage/images'));
+app.use('/public', express.static(`${__dirname}/storage/images`)) 
 app.use("/api/images", imagesRouter);
 app.use("/api/users", usersRouter);
 app.use("/api/login", loginRouter);
